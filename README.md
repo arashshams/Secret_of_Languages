@@ -6,9 +6,9 @@ For more details, please refer to the [Kaggle Kernel](https://www.kaggle.com/ara
 In this analysis, I will visually demonstrate how these languages are different is certain attributes.
 
 ## Datasets
-There are two data sets used in this study the `Languages` and the `Spoken texts` data sets (found here and here).
+There are two data sets used in this study the `Languages` and the `Spoken texts` data sets (found [here](https://github.com/arashshams/Secret_of_Languages/blob/master/languages.csv) and [here](https://github.com/arashshams/Secret_of_Languages/blob/master/spoken-texts.csv)).
 
-Below is a sneak peek at both datas sets following with an overview of features in each.
+Below is a sneak peek at both data sets following with an overview of features in each.
 
 ![dataset](./Images/plot_1.png)
 
@@ -44,9 +44,16 @@ Once `speech_rate` defined as `distinct_syllables`/`duration` is plotted against
 
 Technically, a high value in both features (`information_density` & `speech_rate`) would indicate a high information rate and efficient communication (a higher number of information bits conveyed per second).
 
-![dataset](./Images/plot_3.png)
+![dataset](./Images/plot_4.png)
 
 It looks like we do not have a language that is high both in `information_density` and `speech_rate`, which could indicate that human minds are not good at processing auditory information beyond a certain rate limit.
+
+Let's take another step deeper and define `information_rate` as `information_density` ✕ `speech_rate`. This new feature holds the amount of information per second conveyed by each speaker.
+
+Now let's plot `information_rate` for each language in the study to see if there are at least small differences between them.
+
+![dataset](./Images/plot_5.png)
+
 
 ## Conclusions
 - In an aim to investigate the potential differences and similarities of languages, 17 different languages from two continents (Asia and Europe) were studied. In the first step, I decided to evaluate the relatioshship between the `information_density` (bits of information per syllable) and the number of distinct syllabus for each language. Results proved that firstly as expeted the higher the `number of distinct syllabus`, the greater the `information_density` is. Secondly, the data for Asian languages cluster close to each other. Same story goes with European languages. Of course some outliers like **French** and **Mandarin** were also observed.
