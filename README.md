@@ -1,7 +1,7 @@
 # Secret of Languages
 This repo hosts a visual analysis of 17 different spoken languages in the world.
 
-For more details, please refer to the [Kaggle Kernel](https://www.kaggle.com/arashshamseddini/kaggle-customer-default/edit).
+For more details, please refer to the [Kaggle Kernel](https://www.kaggle.com/arashshamseddini/secret-of-languages/).
 
 In this analysis, a classification problem of predicting whether a credit card client will default or not is addressed.
 
