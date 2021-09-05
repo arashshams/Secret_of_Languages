@@ -3,7 +3,7 @@ This repo hosts a visual analysis of 17 different spoken languages in the world.
 
 For more details, please refer to the [Kaggle Kernel](https://www.kaggle.com/arashshamseddini/secret-of-languages/).
 
-In this analysis, I will visually demonstrateb how these langaues are different is certain attributes.
+In this analysis, I will visually demonstrate how these languages are different is certain attributes.
 
 ## Datasets
 There are two data sets used in this study (found here), the `Languages` and the `Spoken texts` data sets.
