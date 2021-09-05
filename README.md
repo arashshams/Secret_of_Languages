@@ -6,11 +6,11 @@ For more details, please refer to the [Kaggle Kernel](https://www.kaggle.com/ara
 In this analysis, I will visually demonstrate how these languages are different is certain attributes.
 
 ## Datasets
-There are two data sets used in this study (found here), the `Languages` and the `Spoken texts` data sets.
+There are two data sets used in this study the `Languages` and the `Spoken texts` data sets (found here and here).
 
 Below is a sneak peek at both datas sets following with an overview of features in each.
 
-### image
+![dataset](./Images/plot_1.png)
 
 <center><h3>Languages dataset</h4></center>
 
@@ -22,7 +22,7 @@ Below is a sneak peek at both datas sets following with an overview of features 
 | distinct_syllables  | The number of different syllables in the language |
 | continent           | The continent where the language is spoken        |
 
-### image
+![dataset](./Images/plot_2.png)
 
 <center><h3>Spoken texts dataset</h4></center>
 
@@ -38,13 +38,13 @@ Below is a sneak peek at both datas sets following with an overview of features 
 
 The following plot shows how the trend that explains the relation between `information_density` and `distinct_syllables` divides the whole bunch into two clusters. It is worth-mentioning that **French** and **Mandarin** are outliers in each cluster.
 
-### image
+![dataset](./Images/plot_3.png)
 
 Once `speech_rate` defined as `distinct_syllables`/`duration` is plotted against `information_density`, a subtle point is found. 
 
 Technically, a high value in both features (`information_density` & `speech_rate`) would indicate a high information rate and efficient communication (a higher number of information bits conveyed per second).
 
-### image
+![dataset](./Images/plot_3.png)
 
 It looks like we do not have a language that is high both in `information_density` and `speech_rate`, which could indicate that human minds are not good at processing auditory information beyond a certain rate limit.
 
