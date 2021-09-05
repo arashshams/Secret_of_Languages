@@ -40,7 +40,7 @@ The following plot shows how the trend that explains the relation between `infor
 
 ### image
 
-Once speech_rate as defined below:
+Once `speech_rate` as defined below:
 
 
 is plotted against information_density, a subtle point is found. Technically, a high value in both features (information_density & speech_rate) would indicate a high information rate and efficient communication (a higher number of information bits conveyed per second).
