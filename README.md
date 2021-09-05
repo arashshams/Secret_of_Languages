@@ -3,11 +3,44 @@ This repo hosts a visual analysis of 17 different spoken languages in the world.
 
 For more details, please refer to the [Kaggle Kernel](https://www.kaggle.com/arashshamseddini/secret-of-languages/).
 
-In this analysis, a classification problem of predicting whether a credit card client will default or not is addressed.
+In this analysis, I will visually demonstrateb how these langaues are different is certain attributes.
 
-## Dataset
-The dataset in this study is the [Default of Credit Card Clients Dataset](https://www.kaggle.com/uciml/default-of-credit-card-clients-dataset) in which there are 30,000 examples and 24 features, and the goal is to estimate whether a person will default (fail to pay) their credit card bills; this column is labeled `default.payment.next.month` in the data.
+## Datasets
+There are two data sets used in this study (found here), the `Languages` and the `Spoken texts` data sets.
 
-Below is a sneak peek at the dataset.
-![dataset](./Images/dataset.png)
+Below is a sneak peek at both datas sets following with an overview of features in each.
 
+### image
+
+<center><h3>Languages dataset</h4></center>
+
+| Column              | Description                                       |
+|---------------------|---------------------------------------------------|
+| iso_lang            | ISO_639-3 language code                           |
+| language            | Language name                                     |
+| information density | Bits of information per syllable in the language  |
+| distinct_syllables  | The number of different syllables in the language |
+| continent           | The continent where the language is spoken        |
+
+### image
+
+<center><h3>Spoken texts dataset</h4></center>
+
+| Column    | Description                                     |
+|-----------|-------------------------------------------------|
+| speaker   | Speaker ID                                      |
+| iso_lang  | ISO_639-3 language code                         |
+| text      | Text ID                                         |
+| sex       | The sex of the speaker                          |
+| duration  | The number of seconds it took to speak the text |
+| syllables | Number of syllables uttered during the speech   |
+| age       | The age of the speaker                          |
+
+The following plot shows how the trend that explains the relation between `information_density` and `distinct_syllables` divides the whole bunch into two clusters. It is worth-mentioning that **French** and **Mandarin** are outliers in each cluster.
+
+### image
+
+Once speech_rate as defined below:
+
+
+is plotted against information_density, a subtle point is found. Technically, a high value in both features (information_density & speech_rate) would indicate a high information rate and efficient communication (a higher number of information bits conveyed per second).
